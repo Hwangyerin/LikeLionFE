@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    border: 0;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: #627254;
+}
+
+body {
+    margin: 0 auto;
+    width: 70vw;
+    height: 100vh;
+}
+body > div {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+}
+header > div {
+    width: 300px;
+    height: 100%;
+}
+nav {
+    width: 20%;
+    height: 100%;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #627254;
+    height: 100%;
+    width: 30%;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background-color: #fff;
+    width: 80%;
+    height: 25%;
+    margin-bottom: 8px;
+}
+
+p {
+    text-align: center;
+    display: inline-block;
+    border: 2px;
+    width: 80px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #627254;
+    color: #627254;
+    margin-bottom: 20px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 80%;
+    height: 65%;
+}
+
+.section2 div {
+    background-color: #eeeeee;
+    width: 80%;
+    height: 25px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.section2 > .special {
+    border: 2px;
+    border-style: solid;
+    border-color: #d1d1d1;
+    background-color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #76885b;
+    width: 70%;
+    height: 100%;
+}
+
+.color-palette {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 90%;
+    height: 15%;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.color-palette > div {
+    background-color: #76885b;
+    width: 70px;
+    height: 60px;
+    border-radius: 3px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.list > div {
+    display: flex;
+    align-items: center;
+    width: 87%;
+    height: 38px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.list > div > div {
+    width: 20px;
+    height: 20px;
+    border: 2px;
+    border-style: solid;
+    border-color: #dddddd;
+    margin: 5px;
+}
+
+.hidden {
+    visibility: hidden;
+}

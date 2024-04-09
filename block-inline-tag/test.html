@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                color: white;
+            }
+
+            body {
+                width: 100vw;
+                height: 300vh;
+            }
+            .fixed-box {
+                position: fixed;
+                top: 20px;
+                left: 80%;
+                width: 200px;
+                height: 200px;
+                background-color: #d2e7c2;
+                border-radius: 10px;
+            }
+
+            .section1 {
+                width: 100vw;
+                height: 60vh;
+                background-color: #93b879;
+            }
+
+            .section1 > div {
+                position: sticky;
+                top: 20px;
+                left: 40px;
+                width: 200px;
+                height: 150px;
+                background-color: #608645;
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            .section2 {
+                width: 100vw;
+                height: 60vh;
+                background-color: #608645;
+            }
+            .section2 > div {
+                position: sticky;
+                top: 20px;
+                left: 40px;
+                width: 200px;
+                height: 100px;
+                background-color: #495a3c;
+                border-radius: 10px 10px 0px 0px;
+            }
+            .section3 {
+                width: 100vw;
+                height: 60vh;
+                background-color: #495a3c;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fixed-box">
+            <p>I'm global fixed box</p>
+        </div>
+        <section class="section1">
+            <h3>section1</h3>
+            <div>
+                <p>I'm section1 sticky box</p>
+            </div>
+        </section>
+        <section class="section2">
+            <h3>section2</h3>
+            <div>
+                <p>I'm section2 sticky box</p>
+            </div>
+        </section>
+        <section class="section3">
+            <h3>section3</h3>
+        </section>
+    </body>
+</html>
