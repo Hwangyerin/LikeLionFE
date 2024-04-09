@@ -1,6 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0 auto;
-    width: auto;
+    width: 100vw;
 }
 nav {
     margin: 15px;
@@ -46,12 +50,6 @@ p {
     text-align: left;
 }
 
-input {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-}
-
 img {
     width: 60%;
 }
@@ -68,4 +66,9 @@ aside {
     text-align: center;
     padding: 140px 140px;
     color: cornsilk;
+}
+
+details {
+    float: left;
+    margin: 2px;
 }
