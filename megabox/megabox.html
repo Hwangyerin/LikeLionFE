@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Megabox</title>
+        <link rel="stylesheet" href="./megabox.css" />
+    </head>
+    <body>
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/a563f706d0.js" crossorigin="anonymous"></script>
+        <!-- header -->
+        <header>
+            <div class="container">
+                <nav class="top-nav">
+                    <ul class="left-ul">
+                        <a href=""><li>VIP LOUNGE</li></a>
+                        <a href=""><li>멤버십</li></a>
+                        <a href=""><li>고객센터</li></a>
+                    </ul>
+                    <ul class="right-ul">
+                        <a href=""><li>로그인</li></a>
+                        <a href=""><li>회원가입</li></a>
+                        <a href=""><li>빠른예매</li></a>
+                    </ul>
+                </nav>
+                <nav class="bottom-nav">
+                    <div class="pictogram">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <ul class="left-bottom-ul">
+                        <a href=""><li>영화</li></a>
+                        <a href=""><li>예매</li></a>
+                        <a href=""><li>극장</li></a>
+                    </ul>
+                    <!-- 메가박스 로고  -->
+                    <img
+                        class="logo"
+                        src="https://img.megabox.co.kr/static/pc/images/common/ci/logo-white_new2.png"
+                        alt=""
+                    />
+
+                    <ul class="right-bottom-ul">
+                        <a href=""><li>이벤트</li> </a>
+                        <a href=""><li>스토어</li></a
+                        ><a href=""><li>혜택</li></a>
+                    </ul>
+                    <div class="pictogram">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- 영화 랭킹 -->
+        <section class="boxoffice">
+            <div class="container">
+                <div class="title-boxoffice">
+                    <p class="hidden">더 많은 영화보기</p>
+                    <p>박스오피스</p>
+                    <div>
+                        <p>더 많은 영화보기</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <div class="movie-list">
+                    <ul class="ul-movie-list">
+                        <!-- 1위 영화 -->
+                        <li class="movie">
+                            <img
+                                class="movie1"
+                                src="https://img.megabox.co.kr/SharedImg/2024/04/24/4Kukr9DeYIjfEzRWDvCNU82dwZA8XpEM_420.jpg"
+                                alt=""
+                            />
+                            <div class="ticketing-button">
+                                <button type="button" class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>2.2k</p>
+                                </button>
+                                <button type="submit" class="ticketing">예매</button>
+                            </div>
+                        </li>
+                        <!-- 2위 영화 -->
+                        <li class="movie">
+                            <img
+                                class="movie2"
+                                src="https://img.megabox.co.kr/SharedImg/2024/05/03/0wqe8EqPzuhkaucBD0j5g0bjmF1p07b2_420.jpg"
+                                alt=""
+                            />
+                            <div class="ticketing-button">
+                                <button class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>415</p>
+                                </button>
+                                <button class="ticketing" onclick="location.href='#'">예매</button>
+                            </div>
+                        </li>
+                        <!-- 3위 영화 -->
+                        <li class="movie">
+                            <img
+                                class="movie3"
+                                src="https://img.megabox.co.kr/SharedImg/2024/03/08/cXQEF1oKHFLu6EvP16zSZGjHUJoYSAT2_420.jpg"
+                                alt=""
+                            />
+                            <div class="ticketing-button">
+                                <button class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>1.4k</p>
+                                </button>
+                                <button class="ticketing">예매</button>
+                            </div>
+                        </li>
+                        <!-- 4위 영화 -->
+                        <li class="movie">
+                            <img
+                                class="movie4"
+                                src="https://img.megabox.co.kr/SharedImg/2024/04/05/dtarjzxgopztZAL2Z8W3GAGINvEXrof8_420.jpg"
+                                alt=""
+                            />
+                            <div class="ticketing-button">
+                                <button class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>1.2k</p>
+                                </button>
+                                <button class="ticketing">예매</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 영화 검색 -->
+                <ul class="movie-search">
+                    <li class="search">
+                        <input type="text" class="input-search" placeholder="영화명을 입력해주세요" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <a href=""><p>상영시간표</p></a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-film"></i>
+                        <a href=""><p>박스오피스</p></a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-ticket"></i>
+                        <a href=""><p>빠른예매</p></a>
+                    </li>
+                </ul>
+                <div class="control">
+                    <i class="fa-solid fa-computer-mouse"></i>
+                </div>
+            </div>
+        </section>
+        <!-- 혜택 -->
+        <section class="benefit">
+            <div class="container">
+                <div class="benefit-left">
+                    <div class="original-ticket">
+                        <div class="ticket-left">
+                            <h1>혜택</h1>
+                            <img
+                                src="https://img.megabox.co.kr/SharedImg/BnftMng/2024/04/08/JaBhDmMiugTaYtJrU5TMvLjoaIgE6HBA.png"
+                                alt=""
+                            />
+                            <div class="slide-bar">
+                                <div class="bar"></div>
+                                <i class="fa-solid fa-angle-left"></i>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <i class="fa-solid fa-caret-right"></i>
+                                <p>4/6</p>
+                            </div>
+                        </div>
+                        <img
+                            class="ticket-right"
+                            src="https://img.megabox.co.kr/SharedImg/BnftMng/2024/04/08/Q2IqKgWH19ZmvAWz8Kzlyj6eM9w9O7Rg.png"
+                            alt=""
+                        />
+                    </div>
+                    <img
+                        class="kakao-ad"
+                        src="https://img.megabox.co.kr/SharedImg/event/2023/08/30/KpW5X2KPkHXO19gdVvbpfwM3rJNkCYLr.jpg"
+                        alt=""
+                    />
+                    <img
+                        class="shinhancard-ad"
+                        src="https://img.megabox.co.kr/SharedImg/event/2024/04/12/voiSDQWDAKkQYWToL3xVi6lHfoa9xa5H.jpg"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </section>
+        <section class="benefit-background">
+            <div class="benefit-nav">
+                <div>
+                    <i class="fa-regular fa-gem"></i>
+                    <p>VIP LOUNGE</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-large"></i>
+                    <p>멤버십</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-credit-card"></i>
+                    <p>할인카드안내</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-gift"></i>
+                    <p>이벤트</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-beer-mug-empty"></i>
+                    <p>스토어</p>
+                </div>
+            </div>
+        </section>
+        <!-- 큐레이션 -->
+        <section class="curation">
+            <div class="container">
+                <div class="curation-title">
+                    <h1>큐레이션</h1>
+                    <div>
+                        <p>큐레이션 더보기</p>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <main class="curation-main">
+                    <div class="classic-society">
+                        <div class="img-group-curation">
+                            <img
+                                class="poster-curation"
+                                src="https://img.megabox.co.kr/SharedImg/2024/03/28/kURob4S2ATcdXw4FkxnJZIXX5LdwIdaP_420.jpg"
+                                alt=""
+                            />
+                            <img
+                                class="label-curation"
+                                src="https://www.megabox.co.kr/static/pc/images/main/bg-bage-curation-classic.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="curation-button">
+                            <button class="information">상세정보</button>
+                            <button class="ticketing-curation">예매</button>
+                        </div>
+                    </div>
+                    <article class="curation-article">
+                        <p class="hash-tag">#클래식소사이어티</p>
+                        <p class="header-article">[씨네클래식 세계3대 오페라축제] 피가로의 결혼</p>
+                        <br />
+                        <hr />
+                        <br />
+                        <p>2023 잘츠부르크 페스티벌: 피가로의 결혼</p>
+
+                        <br />
+                        <p>Salzburg Festival 2023: Le Nozze Di Figaro</p>
+                        <p>교묘하고, 어둡고, 잔인하게 즐기는 새로운 피가로의 결혼</p>
+                        <p>마피아 스릴러로 재탄생한 모차르트의 3대 걸작</p>
+                        <p>긴장감 넘치는 서사, 웅장한 성악의 향연</p>
+                        <br />
+                        <p>제작연도: 2023</p>
+                        <div class="poster-article">
+                            <!-- 1번째 포스터 -->
+                            <div class="poster-list">
+                                <img
+                                    class="movie-poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2024/04/18/2lYrUlROzqnpb8dDoMWAAhfSycfeoWtd_230.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    class="red-label"
+                                    src="https://www.megabox.co.kr/static/pc/images/main/bg-bage-curation-film-m.png"
+                                    alt=""
+                                />
+                                <p>차이콥스키의 아내</p>
+                            </div>
+                            <!-- 2번째 포스터 -->
+                            <div class="poster-list">
+                                <img
+                                    class="movie-poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2024/03/28/qM6hoG4vlJamtQVij7MITEqTjMAlrEnn_230.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    class="red-label"
+                                    src="https://www.megabox.co.kr/static/pc/images/main/bg-bage-curation-film-m.png"
+                                    alt=""
+                                />
+                                <p>악은 존재하지 않는다</p>
+                            </div>
+                            <!-- 3번째 포스터 -->
+                            <div class="poster-list">
+                                <img
+                                    class="movie-poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2024/04/11/eCxk7ZGlmwS7kJaIZC69Qr7apJSBphwy_230.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    class="red-label"
+                                    src="https://www.megabox.co.kr/static/pc/images/main/bg-bage-curation-film-m.png"
+                                    alt=""
+                                />
+                                <p>보티첼리.피렌체와 메디치</p>
+                            </div>
+                            <!-- 4번째 포스터 -->
+                            <div class="poster-list">
+                                <img
+                                    class="movie-poster"
+                                    src="https://img.megabox.co.kr/SharedImg/2024/03/25/LvGoojqA81ySYG3lnu5StUlGrcng4y7S_230.jpg"
+                                    alt=""
+                                />
+                                <img
+                                    class="red-label"
+                                    src="https://www.megabox.co.kr/static/pc/images/main/bg-bage-curation-film-m.png"
+                                    alt=""
+                                />
+                                <p>땅에 쓰는 시</p>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+        </section>
+        <!-- 메가박스 안내 -->
+        <section class="megabox-guide">
+            <div class="container">
+                <main class="megabox-guide-main">
+                    <h1>메가박스 안내</h1>
+                </main>
+            </div>
+            <hr />
+            <div class="notice">
+                <div class="notice-left">
+                    <p>지점</p>
+                    <span style="margin: 0px 20px 0px 30px"><p>|</p></span>
+                    <a href=""
+                        ><p>
+                            <span style="color: #2b623c">[마산]</span> [마산]건물 정전으로 인한 영업 일시중단 안내
+                        </p></a
+                    >
+                </div>
+                <div class="notice-right">
+                    <p>2024.05.05</p>
+                    <span style="margin: 0px 20px 0px 30px"><p>|</p></span>
+                    <a href=""><p>더보기</p></a>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <hr />
+        </section>
+        <!-- 하단 네비게이션 고객센터 -->
+        <section class="customer-service">
+            <div class="container">
+                <div class="customer-service">
+                    <div>
+                        <i class="fa-solid fa-headset"></i>
+                        <p>고객센터</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-question"></i>
+                        <p>자주 묻는 질문</p>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-comment"></i>
+                        <p>1:1 문의</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-users"></i>
+                        <p>단체/대관문의</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-box-open"></i>
+                        <p>분실물 문의/접수</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-couch"></i>
+                        <p>더 부티크 프라이빗</p>
+                        <p>대관예매</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="list-footer">
+                    <ul class="ul-footer">
+                        <a href=""><li>회사소개</li></a>
+                        <a href=""><li>인재채용</li></a>
+                        <a href=""><li>사회공헌</li></a>
+                        <a href=""><li>제휴/광고/부대사업문의</li></a>
+                        <a href=""><li>이용약관</li></a>
+                        <a href=""><li>위치기반서비스이용약관</li></a>
+                        <a href=""><li>개인정보처리방침</li></a>
+                        <a href=""><li>윤리경영</li></a>
+                    </ul>
+                    <button><i class="fa-solid fa-magnifying-glass"></i>극장찾기</button>
+                </div>
+                <div class="footer-information">
+                    <img src="https://img.megabox.co.kr/static/pc/images/common/ci/logo-opacity_new2.png" alt="" />
+                    <div>
+                        <p>
+                            서울특별시 성동구 왕십리로 50, 6층 (성수동1가, 메가박스 스퀘어) ARS 1544-0070 대표이메일
+                            m.dreamcenter@partner.megabox.co.kr
+                        </p>
+                        <p>
+                            대표자명 홍정인 · 개인정보보호책임자 강병철 · 사업자등록번호 211-86-59478 ·
+                            통신판매업신고번호 2023-서울성동-0177
+                        </p>
+                        <p>COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

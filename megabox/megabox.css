@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(167, 167, 167);
+}
+
+body {
+    width: 100%;
+    background-color: rgb(28, 22, 22);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    padding-top: 15px;
+    border-bottom: solid rgb(111, 111, 111) 1px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+}
+.container {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.top-nav {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-ul {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-ul {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-nav {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.left-bottom-ul,
+.right-bottom-ul {
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pictogram {
+    width: 5%;
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+}
+
+/* boxoffice */
+
+.boxoffice {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 130vh;
+}
+
+.title-boxoffice {
+    width: 70vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.title-boxoffice > div {
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* 영화 랭킹 */
+
+.title-boxoffice > p {
+    color: whitesmoke;
+    font-weight: bold;
+    padding-bottom: 8px;
+    border-bottom: solid rgb(111, 111, 111) 1px;
+}
+
+.movie-list {
+    width: 100%;
+    height: 40cw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul-movie-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30vw;
+}
+.movie {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.movie > img {
+    width: 95%;
+    height: 70%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.ticketing-button {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 영화 상세내용 hover */
+
+.movie1:hover,
+.movie2:hover,
+.movie3:hover,
+.movie4:hover {
+    transition: all 0.5s;
+    opacity: 0.1;
+}
+
+/* 좋아요 버튼 */
+.heart {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    background-color: black;
+    border: solid 0.5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.heart > p {
+    margin-left: 5px;
+    color: white;
+}
+
+/* 예매 버튼 */
+
+.ticketing {
+    width: 64%;
+    background-color: rgb(61, 176, 214);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* 영화 검색 */
+.movie-search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    height: 10vh;
+    color: whitesmoke;
+    background-color: rgb(10, 8, 8);
+    border-radius: 5px;
+}
+
+.movie-search > li {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movie-search > li > i {
+    font-size: x-large;
+    margin-right: 5px;
+}
+
+.search {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px rgb(111, 111, 111);
+}
+
+.input-search {
+    border: none;
+    width: 160px;
+    height: 50px;
+    background-color: rgb(10, 8, 8);
+}
+
+.input-search:focus {
+    border: none;
+    outline: none;
+}
+
+.input-search::placeholder {
+    font-size: 15px;
+}
+
+/* 스크롤 애니메이션 */
+.control {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control > i {
+    font-size: x-large;
+}
+
+.control {
+    animation-name: up;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin: 0 auto;
+}
+
+@keyframes up {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(0px, 20px);
+    }
+}
+
+/* 혜택 */
+
+.benefit {
+    width: 100%;
+    height: 70vh;
+    background-color: #fff;
+}
+.original-ticket {
+    width: 30%;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.ticket-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.ticket-right {
+    margin-top: 80px;
+    width: 35%;
+}
+
+.slide-bar {
+    width: 300px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.slide-bar > i {
+    margin: 5px;
+    color: #503396;
+}
+
+.slide-bar > p {
+    color: #503396;
+}
+
+.bar {
+    width: 300px;
+    height: 1px;
+    background-color: rgb(201, 201, 201);
+}
+
+.ticket-left > h1 {
+    color: #34225f;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.kakao-ad {
+    width: 441px;
+    height: 204px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px -5px black;
+}
+
+.shinhancard-ad {
+    width: 204px;
+    height: 204px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px -5px black;
+}
+
+.benefit-background {
+    width: 100%;
+    height: 50vh;
+    background-color: #503396;
+}
+
+.benefit-nav > div > i {
+    font-size: 50px;
+    margin: 10px;
+    color: #c6c1d1;
+}
+
+.benefit-nav {
+    margin: 0 auto;
+    width: 75vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.benefit-nav > div {
+    color: #c6c1d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 큐레이션 */
+
+.curation {
+    width: 100%;
+    height: 110vh;
+    background-color: #252451;
+}
+
+.curation-title {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.curation-title > div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curation-title > h1 {
+    margin-top: 30px;
+    color: white;
+    font-size: 25px;
+}
+
+.curation-title > div > p {
+    margin-right: 5px;
+}
+
+.poster-curation {
+    border-radius: 5px;
+    width: 300px;
+}
+
+.text-box {
+    background-color: #fff;
+}
+
+.curation-main {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.classic-society {
+    width: 300px;
+    height: auto;
+}
+
+.img-group-curation {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.label-curation {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    display: block;
+    width: 123px;
+    height: 135px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.curation-button {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticketing-curation {
+    width: 48%;
+    height: 50px;
+    background-color: #037b94;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.information {
+    width: 48%;
+    height: 50px;
+    border-radius: 5px;
+    border: solid 1px white;
+    color: white;
+    font-size: 20px;
+    background-color: #252451;
+}
+
+/* 클래식 소사이어티 */
+
+.header-article {
+    font-size: 34px;
+    color: white;
+}
+
+.curation-article > p {
+    color: white;
+}
+
+.hash-tag {
+    font-size: large;
+}
+
+.curation-article > hr {
+    border: 0.5px solid;
+}
+
+/* 큐레이터 포스터 네개 */
+.poster-article {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.poster-list {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.red-label {
+    position: absolute;
+    left: 10px;
+    top: -5px;
+    display: block;
+    width: 35px;
+    height: 50px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.poster-list > p {
+    margin: 5px 0px;
+    color: white;
+}
+
+.movie-poster {
+    border-radius: 5px;
+}
+
+/* 메가박스 안내 */
+.megabox-guide {
+    background-color: #fff;
+}
+
+.megabox-guide-main > h1 {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0 38px 0;
+    color: #351f66;
+}
+
+.notice {
+    color: #252451;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 75vw;
+    height: auto;
+}
+
+.notice-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.notice-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.notice-right > i {
+    margin-left: 5px;
+}
+
+.notice-left > p,
+.notice-right > p {
+    color: #252451;
+}
+
+/* 하단 네비게이션 */
+
+.customer-service {
+    background-color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.customer-service > div > i {
+    font-size: 50px;
+    margin: 10px;
+    color: #36a6a8;
+}
+
+.customer-service > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.customer-service > div > p {
+    color: #000000;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #f8f8fa;
+}
+
+.list-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ul-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.ul-footer > a > li {
+    color: #000000;
+    font-size: small;
+}
+
+.list-footer > button {
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: solid 1px rgb(167, 167, 167);
+    margin-top: 50px;
+    background-color: #f8f8fa;
+    color: #000000;
+}
+
+.list-footer > button > i {
+    padding: 5px;
+    color: black;
+}
+
+.footer-information {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.footer-information > div {
+    font-size: small;
+}
